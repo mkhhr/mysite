@@ -1,6 +1,11 @@
 {% extends "bootstrap/base.html" %}
 
 {% block title %}马坤华的个人网站{%endblock%}
+{% block styles %}
+	{{super()}}
+	<link rel="stylesheet" href="{{url_for('static', filename='css/default.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-select.min.css')}}">
+{% endblock %}
 
 {% block navbar %}
 <div class="navbar navbar-default col-md-8 col-md-offset-2" id="navbar-example">
@@ -52,4 +57,60 @@
 		<li><a href="#">CEO信箱</a></li>
 	</ul>
 </div>
+<div class="navbar navbar-default col-md-8 col-md-offset-2"> 
+	<ul class="nav navbar-nav">
+		<li><a href="#"><img src="{{url_for('static', filename='img/logo.png')}}" 
+			alt="daoxila.com" /></a></li>
+		<li class=dropdown>
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				成都 <i class="caret"></i>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">热门城市</a></li>
+				<li><a href="#">华北东北</a></li>
+				<li><a href="#">华东地区</a></li>
+			</ul>
+		</li>
+		<li>
+			<form class="form-inline navbar-form">
+				<input type="text" class="form-control" placeholder="酒店名">
+				<button type="submit" class="btn btn-primary">搜索</button>
+			</form>
+		</li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li>全国免费咨询热线 <br /> 400-820-1890</li>
+	</ul>
+</div>
+<div class="navbar navbar-default col-md-8 col-md-offset-2">
+	<ul class="nav navbar-nav">
+		<li class="active"><a href="#">首页</a></li>
+		<li><a href="#">婚纱</a></li>
+		<li><a href="#">星级酒店</a></li>
+		<li><a href="#">特色餐厅</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				婚纱照 <i class="caret"></i>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">全球旅拍</a></li>
+			</ul>
+		</li>
+		<li><a href="#">蜜月游</a></li>
+		<li class="divider-vertical"></li>
+		<li><a href="#">新人说</a></li>
+		<li><a href="#">婚品</a></li>
+	</ul>
+</div>
+{% endblock %}
+
+{% block content %}
+	<div class="col-md-8 col-md-offset-2">
+		{% include "content.html" %}
+	</div>
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='js/bootstrap-select.js')}}"></script>
 {% endblock %}
