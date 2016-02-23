@@ -4,3 +4,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 ul.nav li.dropdown:hover > .caret {
 	transform: rotate(180deg);
 }
+.show-outline {
+	border: solid 3px red;
+}
+.bootstrap-select {
+	max-width: 100%;
+}
+.content1 {
+	height: 400px;
+}
+.carousel-inner {
+	height: 200px;
+}
