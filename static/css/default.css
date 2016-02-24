@@ -10,9 +10,10 @@ ul.nav li.dropdown:hover > .caret {
 .bootstrap-select {
 	max-width: 100%;
 }
-.content1 {
-	height: 400px;
+#carousel-1 .active img {
+	height: 300px;
+	width: 800px;
 }
-.carousel-inner {
-	height: 200px;
+ul.inline > li {
+	float: left;
 }
