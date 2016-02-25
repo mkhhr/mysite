@@ -17,3 +17,14 @@ ul.nav li.dropdown:hover > .caret {
 ul.inline > li {
 	float: left;
 }
+#navbar2 li a {
+	line-height:42px;
+	font-size: 20px;
+}
+#navbar2 form {
+	line-height: 56px;
+}
+#navbar2 > div {
+	display: inline-block;
+	vertical-align: bottom;
+}
