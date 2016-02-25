@@ -28,3 +28,11 @@ ul.inline > li {
 	display: inline-block;
 	vertical-align: bottom;
 }
+.navbar-text {
+	font-size: 20px;
+	text-align: center;
+}
+.navbar-text span {
+	color: #f66;
+	font-size:25px;
+}
