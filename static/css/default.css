@@ -34,5 +34,8 @@ ul.inline > li {
 }
 .navbar-text span {
 	color: #f66;
-	font-size:25px;
+	font-size:15px;
+}
+#navbar2 .navbar-form .form-control {
+	width: 300px;
 }
